@@ -1,0 +1,2272 @@
+[
+  {
+    "restaurant": [
+      {
+        "id": "ab76c6b8-0be9-42f3-b203-c575a5cde084",
+        "name": "The Food Hub",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-25T05:35:29.528Z",
+        "updated_at": "2023-08-24T17:59:04.432Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "494761b1-a7b9-44b0-9d43-8b1540f3c966",
+        "name": "Gourmet Delights",
+        "location": "Los Angeles",
+        "menu": "Sushi",
+        "created_at": "2023-08-24T22:10:00.143Z",
+        "updated_at": "2023-08-24T13:22:52.966Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "75ba2b80-d620-4711-a2ab-1dc1925039e1",
+        "name": "Savor & Enjoy",
+        "location": "London",
+        "menu": "Pasta",
+        "created_at": "2023-08-24T21:37:22.879Z",
+        "updated_at": "2023-08-25T06:57:36.877Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "63913c60-52e0-4570-985e-7b8384ff16ab",
+        "name": "Taste Buds",
+        "location": "Paris",
+        "menu": "Burger",
+        "created_at": "2023-08-24T16:52:33.484Z",
+        "updated_at": "2023-08-25T01:05:21.616Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "a6106ca7-fe9f-4651-ab95-279d9399af09",
+        "name": "Flavorsome",
+        "location": "Tokyo",
+        "menu": "Pizza",
+        "created_at": "2023-08-25T04:27:54.501Z",
+        "updated_at": "2023-08-25T03:43:10.999Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "d1f8766b-5a66-4204-a106-812e38d55ddf",
+        "time": "2023-08-24T17:37:45.754Z",
+        "created_at": "2023-08-24T18:30:31.773Z",
+        "updated_at": "2023-08-25T03:29:07.529Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "ab76c6b8-0be9-42f3-b203-c575a5cde084"
+      },
+      {
+        "id": "9746f14b-bd2d-4161-a504-0e640c855b8f",
+        "time": "2023-08-24T15:26:22.416Z",
+        "created_at": "2023-08-24T13:46:46.503Z",
+        "updated_at": "2023-08-25T02:20:38.698Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "ab76c6b8-0be9-42f3-b203-c575a5cde084"
+      },
+      {
+        "id": "66639111-8d18-4378-9f65-c6cfc5049c6d",
+        "time": "2023-08-24T16:21:52.146Z",
+        "created_at": "2023-08-25T02:36:49.940Z",
+        "updated_at": "2023-08-25T08:41:53.819Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "75ba2b80-d620-4711-a2ab-1dc1925039e1"
+      },
+      {
+        "id": "08d6e1d9-3993-4126-95cb-715164305737",
+        "time": "2023-08-25T11:02:55.716Z",
+        "created_at": "2023-08-25T04:09:56.702Z",
+        "updated_at": "2023-08-24T17:26:33.505Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "494761b1-a7b9-44b0-9d43-8b1540f3c966"
+      },
+      {
+        "id": "a8f40dd1-af41-4aa1-bb22-010aa5af5903",
+        "time": "2023-08-24T20:26:53.987Z",
+        "created_at": "2023-08-24T16:15:17.084Z",
+        "updated_at": "2023-08-25T09:41:49.237Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "a6106ca7-fe9f-4651-ab95-279d9399af09"
+      }
+    ],
+    "order": [
+      {
+        "id": "f921fa1a-3939-4f48-a976-8146e473fe5c",
+        "status": "Pending",
+        "created_at": "2023-08-24T17:11:12.469Z",
+        "updated_at": "2023-08-25T04:33:00.464Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "63913c60-52e0-4570-985e-7b8384ff16ab"
+      },
+      {
+        "id": "51cb55ad-4a32-4655-822f-d9643c38db3e",
+        "status": "Processing",
+        "created_at": "2023-08-25T00:36:40.808Z",
+        "updated_at": "2023-08-24T17:35:48.895Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "a6106ca7-fe9f-4651-ab95-279d9399af09"
+      },
+      {
+        "id": "10c2f0aa-a096-4e06-bad1-da180479eebb",
+        "status": "Shipped",
+        "created_at": "2023-08-24T17:41:54.376Z",
+        "updated_at": "2023-08-25T00:21:17.797Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "a6106ca7-fe9f-4651-ab95-279d9399af09"
+      },
+      {
+        "id": "5da0090a-5467-4f4d-a156-58417b9450a2",
+        "status": "Delivered",
+        "created_at": "2023-08-24T19:02:58.401Z",
+        "updated_at": "2023-08-25T08:07:14.652Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "75ba2b80-d620-4711-a2ab-1dc1925039e1"
+      },
+      {
+        "id": "595a931e-07e3-4a83-8c5b-7a146e90f4d0",
+        "status": "Cancelled",
+        "created_at": "2023-08-25T06:00:12.501Z",
+        "updated_at": "2023-08-25T02:09:13.489Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "a6106ca7-fe9f-4651-ab95-279d9399af09"
+      }
+    ],
+    "discount": [
+      {
+        "id": "2c1f746b-e9a6-4200-85b7-24ba3f442ca0",
+        "code": "SALE50",
+        "description": "50% off on all items",
+        "created_at": "2023-08-25T07:13:25.178Z",
+        "updated_at": "2023-08-25T12:01:23.012Z",
+        "restaurant_id": "494761b1-a7b9-44b0-9d43-8b1540f3c966"
+      },
+      {
+        "id": "f13a1bda-d963-4adf-9d10-f329a72a153f",
+        "code": "DISCOUNT20",
+        "description": "Get 20% discount on your order",
+        "created_at": "2023-08-25T01:57:58.153Z",
+        "updated_at": "2023-08-24T17:10:15.358Z",
+        "restaurant_id": "63913c60-52e0-4570-985e-7b8384ff16ab"
+      },
+      {
+        "id": "d88178de-0723-4ac9-a851-dc8f14cb45fd",
+        "code": "SPECIAL10",
+        "description": "Special discount of 10% for a limited time",
+        "created_at": "2023-08-25T07:45:01.587Z",
+        "updated_at": "2023-08-25T04:04:47.036Z",
+        "restaurant_id": "75ba2b80-d620-4711-a2ab-1dc1925039e1"
+      },
+      {
+        "id": "8da2939d-8780-45c6-8ddd-df0da08ef7d9",
+        "code": "OFFER25",
+        "description": "25% off on selected products",
+        "created_at": "2023-08-25T02:39:00.360Z",
+        "updated_at": "2023-08-24T20:36:55.511Z",
+        "restaurant_id": "a6106ca7-fe9f-4651-ab95-279d9399af09"
+      },
+      {
+        "id": "b988ab4b-43e1-4937-b051-4b032cc40ca2",
+        "code": "SAVE15",
+        "description": "Save 15% on your purchase",
+        "created_at": "2023-08-25T08:07:05.698Z",
+        "updated_at": "2023-08-24T16:54:41.699Z",
+        "restaurant_id": "75ba2b80-d620-4711-a2ab-1dc1925039e1"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "65b66d1c-7d2d-4d58-abf8-f115c2a678e2",
+        "email": "Barbara.Leannon@gmail.com",
+        "firstName": "Rylan",
+        "lastName": "Crona",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/76216439",
+        "tenantId": null
+      },
+      {
+        "reference": "fe8495a5-6628-48e3-a3b1-b0325efc9f2e",
+        "email": "Doug38@hotmail.com",
+        "firstName": "Annabell",
+        "lastName": "Padberg",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/786.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "676bede0-5939-421e-9a0d-44739a776fa5",
+        "email": "Deja_Waters@gmail.com",
+        "firstName": "Laila",
+        "lastName": "Dooley",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/679.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a8f5c9ff-8d6e-4da5-ac09-2fac435e7a72",
+        "email": "Herman3@hotmail.com",
+        "firstName": "Vena",
+        "lastName": "Jenkins",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/19735798",
+        "tenantId": null
+      },
+      {
+        "reference": "934125c2-c5bc-441c-902d-08a96047cc88",
+        "email": "Noe_Davis-Homenick69@yahoo.com",
+        "firstName": "Chance",
+        "lastName": "Hirthe",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/34897335",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "56f80ebc-921d-4af0-95d2-253256ecb219",
+        "name": "The Gourmet Kitchen",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-24T22:21:55.407Z",
+        "updated_at": "2023-08-25T11:13:00.715Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "0f6e837d-e1c5-46e3-81f2-253fd1588615",
+        "name": "Savor Bistro",
+        "location": "San Francisco",
+        "menu": "Sushi",
+        "created_at": "2023-08-25T04:02:48.423Z",
+        "updated_at": "2023-08-24T15:40:04.453Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "749b1eff-5712-43c0-b9c9-737f44fa8c96",
+        "name": "Foodie Haven",
+        "location": "London",
+        "menu": "Pasta",
+        "created_at": "2023-08-24T22:40:23.257Z",
+        "updated_at": "2023-08-25T00:04:47.249Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "05d9cfc2-4840-4052-b3bd-3b7610187e13",
+        "name": "Culinary Delights",
+        "location": "Tokyo",
+        "menu": "Burger",
+        "created_at": "2023-08-24T13:42:39.777Z",
+        "updated_at": "2023-08-24T19:42:26.814Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "0f69e4c3-ef79-4a1e-9e97-b533bb3c55e5",
+        "name": "Taste Sensations",
+        "location": "Sydney",
+        "menu": "Pizza",
+        "created_at": "2023-08-24T22:48:53.592Z",
+        "updated_at": "2023-08-25T11:52:44.021Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "2c6d3bcc-11b9-4621-a972-6d6a99bf43f7",
+        "time": "2023-08-24T13:24:25.816Z",
+        "created_at": "2023-08-24T15:48:53.341Z",
+        "updated_at": "2023-08-25T06:52:43.267Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "0f6e837d-e1c5-46e3-81f2-253fd1588615"
+      },
+      {
+        "id": "540b563a-73bc-4516-9768-8cc1278809dd",
+        "time": "2023-08-24T17:01:11.092Z",
+        "created_at": "2023-08-24T23:10:17.918Z",
+        "updated_at": "2023-08-25T06:30:48.798Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "749b1eff-5712-43c0-b9c9-737f44fa8c96"
+      },
+      {
+        "id": "1e63b1d3-a394-4cee-a660-be32f2157773",
+        "time": "2023-08-25T07:06:29.524Z",
+        "created_at": "2023-08-25T11:19:45.859Z",
+        "updated_at": "2023-08-25T01:32:07.089Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "0f69e4c3-ef79-4a1e-9e97-b533bb3c55e5"
+      },
+      {
+        "id": "7edd95e6-e7ee-4817-96a8-432ded544678",
+        "time": "2023-08-24T18:28:52.598Z",
+        "created_at": "2023-08-25T08:27:20.955Z",
+        "updated_at": "2023-08-25T01:03:43.686Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "0f6e837d-e1c5-46e3-81f2-253fd1588615"
+      },
+      {
+        "id": "40423081-7dfd-4d3b-8f31-d27e013b6472",
+        "time": "2023-08-24T18:05:19.536Z",
+        "created_at": "2023-08-25T12:33:40.398Z",
+        "updated_at": "2023-08-24T21:00:23.478Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "749b1eff-5712-43c0-b9c9-737f44fa8c96"
+      }
+    ],
+    "order": [
+      {
+        "id": "e8d34d69-bee7-4ade-b7ce-3de9476b00eb",
+        "status": "Pending",
+        "created_at": "2023-08-24T23:36:38.812Z",
+        "updated_at": "2023-08-25T03:30:20.150Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "0f69e4c3-ef79-4a1e-9e97-b533bb3c55e5"
+      },
+      {
+        "id": "dc59c3ab-619b-45ba-a149-b7228df429ca",
+        "status": "Processing",
+        "created_at": "2023-08-25T01:24:24.796Z",
+        "updated_at": "2023-08-24T15:06:43.657Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "0f6e837d-e1c5-46e3-81f2-253fd1588615"
+      },
+      {
+        "id": "83f52782-e7d8-4b77-8fba-e99ab07d58a5",
+        "status": "Shipped",
+        "created_at": "2023-08-24T18:27:58.926Z",
+        "updated_at": "2023-08-25T06:47:33.073Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "56f80ebc-921d-4af0-95d2-253256ecb219"
+      },
+      {
+        "id": "43a32be5-9c9a-4f5d-8aaf-702c2f43e453",
+        "status": "Delivered",
+        "created_at": "2023-08-24T23:28:31.766Z",
+        "updated_at": "2023-08-24T22:34:10.417Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "0f6e837d-e1c5-46e3-81f2-253fd1588615"
+      },
+      {
+        "id": "2c000b8b-2c19-4668-b16d-be2a89da8ace",
+        "status": "Cancelled",
+        "created_at": "2023-08-24T19:41:13.956Z",
+        "updated_at": "2023-08-25T08:43:24.052Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "05d9cfc2-4840-4052-b3bd-3b7610187e13"
+      }
+    ],
+    "discount": [
+      {
+        "id": "c011a358-725d-4656-a00a-56ff9d80af74",
+        "code": "SAVE10",
+        "description": "Get 10% off on your next purchase",
+        "created_at": "2023-08-24T13:20:58.965Z",
+        "updated_at": "2023-08-24T23:22:12.641Z",
+        "restaurant_id": "56f80ebc-921d-4af0-95d2-253256ecb219"
+      },
+      {
+        "id": "ad12c33c-5f20-4467-8da5-0d26f6e64ccb",
+        "code": "DISCOUNT20",
+        "description": "Enjoy 20% discount on selected items",
+        "created_at": "2023-08-25T10:18:10.965Z",
+        "updated_at": "2023-08-25T06:30:51.798Z",
+        "restaurant_id": "0f6e837d-e1c5-46e3-81f2-253fd1588615"
+      },
+      {
+        "id": "5a9ae912-25ca-495a-b69e-bc7274e9e41a",
+        "code": "SPECIAL25",
+        "description": "Get 25% off on all orders",
+        "created_at": "2023-08-24T15:38:54.225Z",
+        "updated_at": "2023-08-25T00:34:17.789Z",
+        "restaurant_id": "749b1eff-5712-43c0-b9c9-737f44fa8c96"
+      },
+      {
+        "id": "59532864-1dcf-442a-8915-e650d209cd94",
+        "code": "DEAL30",
+        "description": "Grab 30% discount on new arrivals",
+        "created_at": "2023-08-25T04:32:45.425Z",
+        "updated_at": "2023-08-25T12:27:05.780Z",
+        "restaurant_id": "56f80ebc-921d-4af0-95d2-253256ecb219"
+      },
+      {
+        "id": "d47ee4aa-4700-48cd-abc9-d5eba9bbb730",
+        "code": "OFFER40",
+        "description": "Save 40% on your entire purchase",
+        "created_at": "2023-08-25T10:41:29.388Z",
+        "updated_at": "2023-08-25T02:44:21.203Z",
+        "restaurant_id": "0f6e837d-e1c5-46e3-81f2-253fd1588615"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1867fbce-c8f9-432f-bc6f-facefbade9ee",
+        "email": "Minerva.Waelchi@yahoo.com",
+        "firstName": "Daphney",
+        "lastName": "Conn",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/596.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "fa1874ed-e7ec-432a-832c-c4f5aaaae0dd",
+        "email": "Casey_Wolf95@hotmail.com",
+        "firstName": "Paris",
+        "lastName": "Bartell",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/66089384",
+        "tenantId": null
+      },
+      {
+        "reference": "d98b63bd-464a-418f-a37b-36429abeb070",
+        "email": "Fausto.Huels@yahoo.com",
+        "firstName": "Myron",
+        "lastName": "Beier",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/124.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9281eb08-3497-4d56-aa8e-9b59e4fb4824",
+        "email": "King71@hotmail.com",
+        "firstName": "Leonard",
+        "lastName": "Kemmer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/910.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "30646084-7ae4-440f-80e8-639b7c6d1a89",
+        "email": "Crystel29@yahoo.com",
+        "firstName": "Pansy",
+        "lastName": "Legros",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/409.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "48b98df0-b450-4be8-9003-26c3405cca14",
+        "name": "The Gourmet Grill",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-25T04:59:01.968Z",
+        "updated_at": "2023-08-25T03:16:04.022Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "a223c54a-9fbb-4bd3-9725-8c39d4a1deff",
+        "name": "Taste of Italy",
+        "location": "Los Angeles",
+        "menu": "Pasta",
+        "created_at": "2023-08-25T07:48:59.442Z",
+        "updated_at": "2023-08-25T03:07:52.442Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "31f90a9e-34f3-4394-b5e4-e29ebab2cf69",
+        "name": "Asian Fusion",
+        "location": "London",
+        "menu": "Sushi",
+        "created_at": "2023-08-25T05:24:44.772Z",
+        "updated_at": "2023-08-24T20:08:25.730Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "da0185bc-481f-44af-955e-e1c1a5264ac6",
+        "name": "Mediterranean Delights",
+        "location": "Paris",
+        "menu": "Burger",
+        "created_at": "2023-08-25T01:54:11.306Z",
+        "updated_at": "2023-08-24T23:29:16.261Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "c23de8de-d808-44b0-8d09-ef1e5428d069",
+        "name": "Sushi Paradise",
+        "location": "Tokyo",
+        "menu": "Pizza",
+        "created_at": "2023-08-25T05:21:02.880Z",
+        "updated_at": "2023-08-24T21:47:17.059Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "e17cf77a-3edc-4802-8490-be0fac0aef23",
+        "time": "2023-08-25T09:09:28.608Z",
+        "created_at": "2023-08-24T13:59:41.001Z",
+        "updated_at": "2023-08-25T00:54:14.274Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "da0185bc-481f-44af-955e-e1c1a5264ac6"
+      },
+      {
+        "id": "4be4af0f-889c-46af-afac-ab904132121b",
+        "time": "2023-08-25T01:30:12.168Z",
+        "created_at": "2023-08-24T18:38:28.162Z",
+        "updated_at": "2023-08-25T12:20:48.432Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "c23de8de-d808-44b0-8d09-ef1e5428d069"
+      },
+      {
+        "id": "f9ed936e-d7a9-4c8d-a0e2-37ffcd00908a",
+        "time": "2023-08-25T10:49:38.735Z",
+        "created_at": "2023-08-25T13:08:29.559Z",
+        "updated_at": "2023-08-25T01:22:28.024Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "da0185bc-481f-44af-955e-e1c1a5264ac6"
+      },
+      {
+        "id": "ad3056cb-39b2-4f7f-a0f4-de7dfd72d59b",
+        "time": "2023-08-25T00:41:04.424Z",
+        "created_at": "2023-08-24T23:00:50.477Z",
+        "updated_at": "2023-08-24T18:06:22.965Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "da0185bc-481f-44af-955e-e1c1a5264ac6"
+      },
+      {
+        "id": "9a366614-175e-4814-9729-8de98a2f6145",
+        "time": "2023-08-25T03:37:00.898Z",
+        "created_at": "2023-08-25T12:38:13.943Z",
+        "updated_at": "2023-08-25T02:52:59.557Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "da0185bc-481f-44af-955e-e1c1a5264ac6"
+      }
+    ],
+    "order": [
+      {
+        "id": "4793e711-851a-451d-af36-10456c6d8b76",
+        "status": "Pending",
+        "created_at": "2023-08-24T13:30:30.665Z",
+        "updated_at": "2023-08-25T05:42:36.877Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "31f90a9e-34f3-4394-b5e4-e29ebab2cf69"
+      },
+      {
+        "id": "a00e4162-0cef-425d-913b-d583174e8cb9",
+        "status": "Processing",
+        "created_at": "2023-08-24T21:23:11.832Z",
+        "updated_at": "2023-08-25T03:29:09.268Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "31f90a9e-34f3-4394-b5e4-e29ebab2cf69"
+      },
+      {
+        "id": "e48756ae-7bad-4da4-943a-7e9204d7a08f",
+        "status": "Shipped",
+        "created_at": "2023-08-25T13:00:34.429Z",
+        "updated_at": "2023-08-24T18:40:41.384Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "31f90a9e-34f3-4394-b5e4-e29ebab2cf69"
+      },
+      {
+        "id": "9181a72b-848b-42fd-a914-f0c315ff5981",
+        "status": "Delivered",
+        "created_at": "2023-08-24T16:39:51.885Z",
+        "updated_at": "2023-08-24T20:03:47.348Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "31f90a9e-34f3-4394-b5e4-e29ebab2cf69"
+      },
+      {
+        "id": "1e1b6236-e038-409d-a06b-055f4fc5c9ca",
+        "status": "Cancelled",
+        "created_at": "2023-08-24T18:47:50.613Z",
+        "updated_at": "2023-08-25T07:15:12.540Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "31f90a9e-34f3-4394-b5e4-e29ebab2cf69"
+      }
+    ],
+    "discount": [
+      {
+        "id": "0dd378d6-a4b6-4326-9dd4-89a98118fe8f",
+        "code": "SAVE10",
+        "description": "10% off your next purchase",
+        "created_at": "2023-08-25T02:53:23.645Z",
+        "updated_at": "2023-08-25T02:00:52.162Z",
+        "restaurant_id": "da0185bc-481f-44af-955e-e1c1a5264ac6"
+      },
+      {
+        "id": "e647e489-92b8-4db8-b082-33460c548888",
+        "code": "DISCOUNT20",
+        "description": "Get 20% discount on selected items",
+        "created_at": "2023-08-24T19:44:05.298Z",
+        "updated_at": "2023-08-24T22:20:46.312Z",
+        "restaurant_id": "31f90a9e-34f3-4394-b5e4-e29ebab2cf69"
+      },
+      {
+        "id": "805cdddf-709c-4312-8018-4de39b65ba78",
+        "code": "DEAL15",
+        "description": "15% off for a limited time",
+        "created_at": "2023-08-24T18:24:41.317Z",
+        "updated_at": "2023-08-25T12:08:56.596Z",
+        "restaurant_id": "a223c54a-9fbb-4bd3-9725-8c39d4a1deff"
+      },
+      {
+        "id": "de4bed5c-a16b-414e-9c4a-2e1223885e23",
+        "code": "SALE25",
+        "description": "Biggest sale of the season - 25% off",
+        "created_at": "2023-08-25T02:15:11.071Z",
+        "updated_at": "2023-08-25T05:56:47.181Z",
+        "restaurant_id": "da0185bc-481f-44af-955e-e1c1a5264ac6"
+      },
+      {
+        "id": "3894681a-f445-446f-bf54-575ac6b02ae2",
+        "code": "OFF30",
+        "description": "30% discount on all products",
+        "created_at": "2023-08-25T02:55:42.407Z",
+        "updated_at": "2023-08-24T15:34:09.523Z",
+        "restaurant_id": "48b98df0-b450-4be8-9003-26c3405cca14"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "c9bfa127-062b-48a4-9c31-1895818eceee",
+        "email": "Brannon98@gmail.com",
+        "firstName": "Isaias",
+        "lastName": "Maggio-Abbott",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33539674",
+        "tenantId": null
+      },
+      {
+        "reference": "21bdec3c-abc8-4e60-906a-c8a1270ea70b",
+        "email": "Edwina_Rutherford88@hotmail.com",
+        "firstName": "Hosea",
+        "lastName": "Mann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/88541975",
+        "tenantId": null
+      },
+      {
+        "reference": "0fb9a205-3d4b-44a9-9cd1-ad1ca7fcfdd4",
+        "email": "Kristofer46@gmail.com",
+        "firstName": "Roel",
+        "lastName": "Ullrich",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/473.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "053d2556-802b-44ba-b5b1-197af3f38477",
+        "email": "Vicky.Lang@gmail.com",
+        "firstName": "Elenora",
+        "lastName": "Greenholt",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46943913",
+        "tenantId": null
+      },
+      {
+        "reference": "adb0fcc0-7d7a-4ad6-9c2c-fcc6611e1b82",
+        "email": "Donato.Olson56@hotmail.com",
+        "firstName": "Brad",
+        "lastName": "Welch",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/33977800",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "a1cada0f-6024-4f57-9bb7-def1765c18ed",
+        "name": "Delicious Bites",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-25T01:46:30.339Z",
+        "updated_at": "2023-08-24T19:23:41.497Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "728311e6-66fc-496b-b8a0-67c0aed96f80",
+        "name": "Tasty Treats",
+        "location": "Los Angeles",
+        "menu": "Sushi",
+        "created_at": "2023-08-24T21:05:26.434Z",
+        "updated_at": "2023-08-24T13:43:46.508Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "99468467-7399-4fd4-8088-158468ac7b9f",
+        "name": "Gourmet Delights",
+        "location": "London",
+        "menu": "Pasta",
+        "created_at": "2023-08-24T23:36:15.589Z",
+        "updated_at": "2023-08-25T05:48:37.770Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "e81fc300-2c8e-456c-9148-5c2f16ac50fb",
+        "name": "Flavorful Eats",
+        "location": "Paris",
+        "menu": "Burger",
+        "created_at": "2023-08-25T09:35:29.856Z",
+        "updated_at": "2023-08-25T03:46:15.906Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "166a507c-ca00-4091-a190-611e8a989bfe",
+        "name": "Savory Cuisine",
+        "location": "Tokyo",
+        "menu": "Pizza",
+        "created_at": "2023-08-25T07:47:04.431Z",
+        "updated_at": "2023-08-25T07:43:31.895Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "77d07f5d-2bc9-4b25-94e2-59f250fca388",
+        "time": "2023-08-25T06:24:20.183Z",
+        "created_at": "2023-08-24T19:15:29.481Z",
+        "updated_at": "2023-08-25T10:47:03.589Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "728311e6-66fc-496b-b8a0-67c0aed96f80"
+      },
+      {
+        "id": "dc3e217f-b2bc-40e2-a8bb-5f52b01ff7a9",
+        "time": "2023-08-24T14:30:06.397Z",
+        "created_at": "2023-08-24T16:21:29.963Z",
+        "updated_at": "2023-08-25T03:11:33.068Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "a1cada0f-6024-4f57-9bb7-def1765c18ed"
+      },
+      {
+        "id": "77fb3122-8750-44ce-b512-24f9b1e8c6b5",
+        "time": "2023-08-25T03:07:15.134Z",
+        "created_at": "2023-08-25T03:23:23.642Z",
+        "updated_at": "2023-08-25T11:28:22.188Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "99468467-7399-4fd4-8088-158468ac7b9f"
+      },
+      {
+        "id": "310d4f05-f05f-41cc-8009-ea4aba494e2d",
+        "time": "2023-08-24T23:51:30.283Z",
+        "created_at": "2023-08-25T08:27:23.671Z",
+        "updated_at": "2023-08-25T10:18:56.500Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "a1cada0f-6024-4f57-9bb7-def1765c18ed"
+      },
+      {
+        "id": "dc2beb85-4a33-4bac-8758-bf178b847624",
+        "time": "2023-08-24T17:10:41.129Z",
+        "created_at": "2023-08-25T06:06:30.066Z",
+        "updated_at": "2023-08-25T01:59:28.833Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "e81fc300-2c8e-456c-9148-5c2f16ac50fb"
+      }
+    ],
+    "order": [
+      {
+        "id": "8ae15c5c-7a61-41c6-ae68-a7e02c098ac7",
+        "status": "Pending",
+        "created_at": "2023-08-25T10:39:03.852Z",
+        "updated_at": "2023-08-24T14:54:13.714Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "a1cada0f-6024-4f57-9bb7-def1765c18ed"
+      },
+      {
+        "id": "626250b3-cd89-4f1d-b272-378f8d4d24b8",
+        "status": "Processing",
+        "created_at": "2023-08-25T02:39:35.135Z",
+        "updated_at": "2023-08-24T17:27:50.106Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "166a507c-ca00-4091-a190-611e8a989bfe"
+      },
+      {
+        "id": "5e3fcc73-ea95-4aef-9f0b-efed21b4e1c1",
+        "status": "Shipped",
+        "created_at": "2023-08-25T09:51:25.073Z",
+        "updated_at": "2023-08-24T23:45:00.708Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "e81fc300-2c8e-456c-9148-5c2f16ac50fb"
+      },
+      {
+        "id": "532ee7c2-eff5-4c37-977d-6cabc8f8a274",
+        "status": "Delivered",
+        "created_at": "2023-08-24T14:23:02.512Z",
+        "updated_at": "2023-08-25T02:51:03.065Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "166a507c-ca00-4091-a190-611e8a989bfe"
+      },
+      {
+        "id": "09a7c965-676b-41a5-88ee-9ad1bc754659",
+        "status": "Cancelled",
+        "created_at": "2023-08-25T01:36:39.822Z",
+        "updated_at": "2023-08-24T14:09:36.826Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "99468467-7399-4fd4-8088-158468ac7b9f"
+      }
+    ],
+    "discount": [
+      {
+        "id": "d9910ccb-d516-4dbb-88fb-3afea3e6e5d5",
+        "code": "SAVE10",
+        "description": "Get 10% off your next purchase",
+        "created_at": "2023-08-25T05:27:04.158Z",
+        "updated_at": "2023-08-24T17:25:35.948Z",
+        "restaurant_id": "99468467-7399-4fd4-8088-158468ac7b9f"
+      },
+      {
+        "id": "1e1da38b-627b-4054-ae06-8c8fa2566fbe",
+        "code": "DISCOUNT20",
+        "description": "Enjoy a 20% discount on selected items",
+        "created_at": "2023-08-25T04:57:36.075Z",
+        "updated_at": "2023-08-24T17:22:03.543Z",
+        "restaurant_id": "728311e6-66fc-496b-b8a0-67c0aed96f80"
+      },
+      {
+        "id": "a20bffe9-d3e3-4323-9630-3d384faa6a9f",
+        "code": "SALE30",
+        "description": "Save 30% on all orders",
+        "created_at": "2023-08-24T14:32:03.406Z",
+        "updated_at": "2023-08-25T07:46:39.312Z",
+        "restaurant_id": "166a507c-ca00-4091-a190-611e8a989bfe"
+      },
+      {
+        "id": "8655f5bc-dbd9-4e30-9b40-33bde71fe844",
+        "code": "OFFER40",
+        "description": "Get 40% off during our special offer",
+        "created_at": "2023-08-25T04:52:06.765Z",
+        "updated_at": "2023-08-24T15:01:56.055Z",
+        "restaurant_id": "e81fc300-2c8e-456c-9148-5c2f16ac50fb"
+      },
+      {
+        "id": "2543c9b2-f1c6-4991-8da3-8ba6d4a1f03b",
+        "code": "DEAL50",
+        "description": "Don't miss out on our 50% off deal",
+        "created_at": "2023-08-24T14:59:03.311Z",
+        "updated_at": "2023-08-25T03:21:03.279Z",
+        "restaurant_id": "e81fc300-2c8e-456c-9148-5c2f16ac50fb"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "b4428e08-d0f5-4508-9046-bf92c67c0827",
+        "email": "Nedra.Upton91@hotmail.com",
+        "firstName": "Vivienne",
+        "lastName": "Turner",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6796586",
+        "tenantId": null
+      },
+      {
+        "reference": "69d7cd7a-d272-4a78-ba2b-8ddf1f3c8268",
+        "email": "Tyree85@yahoo.com",
+        "firstName": "Rosendo",
+        "lastName": "Boehm-Hirthe",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/56430812",
+        "tenantId": null
+      },
+      {
+        "reference": "91b372d7-eddc-4c48-973d-878e6c35482f",
+        "email": "Geo.Runte@hotmail.com",
+        "firstName": "Lea",
+        "lastName": "Hudson-Parisian",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32871221",
+        "tenantId": null
+      },
+      {
+        "reference": "5c4024f6-8198-4af0-bc4f-9375b697079d",
+        "email": "Vesta_Oberbrunner-Kihn91@hotmail.com",
+        "firstName": "Jerry",
+        "lastName": "Shanahan",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/335.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1c32e43a-c00c-4b0e-8834-09743fd68209",
+        "email": "Axel44@yahoo.com",
+        "firstName": "Stacy",
+        "lastName": "Nitzsche",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/586.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "a8a1689e-4722-40d1-bf93-47afbf160d08",
+        "name": "The Tasty Bite",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-25T01:08:13.148Z",
+        "updated_at": "2023-08-25T04:42:05.313Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "ee272ba3-81c9-4419-aa2a-ab232a71cdf9",
+        "name": "Gourmet Delights",
+        "location": "Los Angeles",
+        "menu": "Sushi",
+        "created_at": "2023-08-25T05:07:12.974Z",
+        "updated_at": "2023-08-24T17:37:34.502Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "827edf0e-d7cd-40ca-bb54-f7750e40a293",
+        "name": "Savory Eats",
+        "location": "Chicago",
+        "menu": "Pasta",
+        "created_at": "2023-08-25T01:41:25.119Z",
+        "updated_at": "2023-08-24T22:07:38.811Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "f77a8552-6827-4fd9-a8da-0238bde9a6e6",
+        "name": "Flavorful Bites",
+        "location": "San Francisco",
+        "menu": "Burger",
+        "created_at": "2023-08-24T18:17:27.278Z",
+        "updated_at": "2023-08-25T11:01:37.763Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "3f6e386b-211c-4c9e-92a4-a0ef00474c55",
+        "name": "Culinary Delights",
+        "location": "Miami",
+        "menu": "Pizza",
+        "created_at": "2023-08-24T15:48:18.599Z",
+        "updated_at": "2023-08-25T08:38:10.497Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "d0803237-ec02-44a4-9749-d5aa30cdc2cb",
+        "time": "2023-08-25T03:11:02.524Z",
+        "created_at": "2023-08-24T18:01:37.583Z",
+        "updated_at": "2023-08-25T00:52:57.044Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "3f6e386b-211c-4c9e-92a4-a0ef00474c55"
+      },
+      {
+        "id": "54c1bf12-f23a-4687-b072-cb5802f08ddb",
+        "time": "2023-08-24T23:24:53.301Z",
+        "created_at": "2023-08-24T22:39:36.669Z",
+        "updated_at": "2023-08-24T14:46:09.492Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "827edf0e-d7cd-40ca-bb54-f7750e40a293"
+      },
+      {
+        "id": "f3bd1326-eba4-4c2a-ba50-0aed371d75ef",
+        "time": "2023-08-25T10:26:46.576Z",
+        "created_at": "2023-08-24T21:27:53.451Z",
+        "updated_at": "2023-08-25T11:29:09.297Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "827edf0e-d7cd-40ca-bb54-f7750e40a293"
+      },
+      {
+        "id": "6fdef4b0-f764-43c0-92fd-e6b6a30e9413",
+        "time": "2023-08-25T02:00:50.868Z",
+        "created_at": "2023-08-25T07:27:50.086Z",
+        "updated_at": "2023-08-25T01:46:07.148Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "827edf0e-d7cd-40ca-bb54-f7750e40a293"
+      },
+      {
+        "id": "25123c04-9526-4892-a45c-665f31c2d628",
+        "time": "2023-08-24T15:11:01.159Z",
+        "created_at": "2023-08-25T03:24:53.936Z",
+        "updated_at": "2023-08-24T15:28:53.586Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "ee272ba3-81c9-4419-aa2a-ab232a71cdf9"
+      }
+    ],
+    "order": [
+      {
+        "id": "49b59731-58df-4ceb-9589-0e0992c72b33",
+        "status": "Pending",
+        "created_at": "2023-08-25T09:42:26.555Z",
+        "updated_at": "2023-08-24T15:51:39.826Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "827edf0e-d7cd-40ca-bb54-f7750e40a293"
+      },
+      {
+        "id": "45121cd6-a64b-4609-a3e3-3aca2baebec0",
+        "status": "Processing",
+        "created_at": "2023-08-25T00:08:08.817Z",
+        "updated_at": "2023-08-24T22:35:49.548Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "3f6e386b-211c-4c9e-92a4-a0ef00474c55"
+      },
+      {
+        "id": "43622920-7818-46a1-90b7-bb680d0c522f",
+        "status": "Shipped",
+        "created_at": "2023-08-24T15:57:31.520Z",
+        "updated_at": "2023-08-25T11:46:38.011Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "a8a1689e-4722-40d1-bf93-47afbf160d08"
+      },
+      {
+        "id": "a03bf407-00a0-40f0-b819-3af24e6cd8fb",
+        "status": "Delivered",
+        "created_at": "2023-08-25T07:04:37.429Z",
+        "updated_at": "2023-08-24T14:04:50.883Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "f77a8552-6827-4fd9-a8da-0238bde9a6e6"
+      },
+      {
+        "id": "de307a25-b7a0-44dd-a682-0797ed6f52f0",
+        "status": "Cancelled",
+        "created_at": "2023-08-24T23:21:01.395Z",
+        "updated_at": "2023-08-25T03:14:24.665Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "a8a1689e-4722-40d1-bf93-47afbf160d08"
+      }
+    ],
+    "discount": [
+      {
+        "id": "d7512c20-e20a-4a1b-a823-292f3d3b6e6f",
+        "code": "SAVE10",
+        "description": "Get 10% off on your next purchase",
+        "created_at": "2023-08-25T06:59:05.826Z",
+        "updated_at": "2023-08-25T09:07:45.494Z",
+        "restaurant_id": "3f6e386b-211c-4c9e-92a4-a0ef00474c55"
+      },
+      {
+        "id": "96ab3600-2162-4daf-81f5-c5ac830f7394",
+        "code": "DISCOUNT20",
+        "description": "Enjoy 20% discount on selected items",
+        "created_at": "2023-08-24T21:16:19.543Z",
+        "updated_at": "2023-08-25T06:30:20.048Z",
+        "restaurant_id": "a8a1689e-4722-40d1-bf93-47afbf160d08"
+      },
+      {
+        "id": "32b02b5f-dc5c-4f96-866f-76c97217d0e1",
+        "code": "DEAL30",
+        "description": "Get 30% off on all orders",
+        "created_at": "2023-08-25T11:49:41.747Z",
+        "updated_at": "2023-08-25T00:10:34.821Z",
+        "restaurant_id": "3f6e386b-211c-4c9e-92a4-a0ef00474c55"
+      },
+      {
+        "id": "5f450372-118d-411a-b139-3954910c0941",
+        "code": "SALE40",
+        "description": "Limited time offer: 40% off on all products",
+        "created_at": "2023-08-25T11:00:46.997Z",
+        "updated_at": "2023-08-24T21:52:06.475Z",
+        "restaurant_id": "ee272ba3-81c9-4419-aa2a-ab232a71cdf9"
+      },
+      {
+        "id": "71c6c222-07b7-4484-9200-d39a0c1dbf48",
+        "code": "OFF50",
+        "description": "Get 50% discount on your first purchase",
+        "created_at": "2023-08-24T13:29:15.061Z",
+        "updated_at": "2023-08-25T11:29:24.886Z",
+        "restaurant_id": "ee272ba3-81c9-4419-aa2a-ab232a71cdf9"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ff069769-d603-4fff-83b1-80d7cc3f8d7f",
+        "email": "Rudolph.Hartmann@hotmail.com",
+        "firstName": "Tanner",
+        "lastName": "Champlin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/823.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "15400c98-c27a-44ae-9eb8-ddc08d35970b",
+        "email": "Rebeca93@hotmail.com",
+        "firstName": "Tianna",
+        "lastName": "Grady-Breitenberg",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1007.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e7ee3e02-2b54-456e-9f5a-a599f3ad26c1",
+        "email": "Nora14@yahoo.com",
+        "firstName": "Kenna",
+        "lastName": "Christiansen",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/9569589",
+        "tenantId": null
+      },
+      {
+        "reference": "1c8e7faf-645b-4c50-b70e-e8633b225b41",
+        "email": "Sim11@yahoo.com",
+        "firstName": "Mariam",
+        "lastName": "Lind",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/734.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "92c9f65b-8792-4a6a-b818-258db38953a8",
+        "email": "Ricky_Gutmann38@hotmail.com",
+        "firstName": "Santino",
+        "lastName": "Hane",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/115.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "7ab4411e-0121-4c0c-82f9-57dd98cdb669",
+        "name": "Foodie's Delight",
+        "location": "New York",
+        "menu": "Burger",
+        "created_at": "2023-08-25T01:43:40.579Z",
+        "updated_at": "2023-08-25T00:38:44.508Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "60899fd9-ee27-4914-af75-8d500ef50962",
+        "name": "TasteBuds",
+        "location": "Los Angeles",
+        "menu": "Pizza",
+        "created_at": "2023-08-24T14:53:32.735Z",
+        "updated_at": "2023-08-24T16:45:30.419Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "3e462191-efab-47fb-93d6-0037e612179c",
+        "name": "Gourmet Haven",
+        "location": "London",
+        "menu": "Sushi",
+        "created_at": "2023-08-24T19:51:36.910Z",
+        "updated_at": "2023-08-25T01:46:48.908Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "3583b9a6-de5e-4eb4-892c-ab927c448942",
+        "name": "Flavorsome Eats",
+        "location": "Paris",
+        "menu": "Pasta",
+        "created_at": "2023-08-24T17:06:41.059Z",
+        "updated_at": "2023-08-24T22:48:41.169Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "25759587-35f5-49b4-9263-0bab2b1d4092",
+        "name": "Culinary Bliss",
+        "location": "Tokyo",
+        "menu": "Steak",
+        "created_at": "2023-08-24T20:38:34.648Z",
+        "updated_at": "2023-08-24T21:27:40.631Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "8705f4f0-950d-46c3-b126-e4de0fed89a1",
+        "time": "2023-08-25T10:24:57.508Z",
+        "created_at": "2023-08-25T08:27:04.754Z",
+        "updated_at": "2023-08-24T17:28:26.240Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "3583b9a6-de5e-4eb4-892c-ab927c448942"
+      },
+      {
+        "id": "e665cd11-e693-469b-b1f3-fcd72100f1d3",
+        "time": "2023-08-25T04:01:25.333Z",
+        "created_at": "2023-08-25T00:32:01.369Z",
+        "updated_at": "2023-08-24T14:54:53.350Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "3583b9a6-de5e-4eb4-892c-ab927c448942"
+      },
+      {
+        "id": "1de086d2-b594-4c3b-b300-d24c5a2f9b35",
+        "time": "2023-08-24T22:37:43.446Z",
+        "created_at": "2023-08-25T00:08:31.468Z",
+        "updated_at": "2023-08-24T17:22:24.766Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "3583b9a6-de5e-4eb4-892c-ab927c448942"
+      },
+      {
+        "id": "e2d4e8d1-fdf6-4ebd-8967-23a240f4fcd3",
+        "time": "2023-08-25T03:40:01.016Z",
+        "created_at": "2023-08-25T02:44:16.223Z",
+        "updated_at": "2023-08-25T02:35:02.546Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "3583b9a6-de5e-4eb4-892c-ab927c448942"
+      },
+      {
+        "id": "fc76abf7-9a22-4c5e-a5f9-bd04a272c286",
+        "time": "2023-08-25T10:38:04.800Z",
+        "created_at": "2023-08-24T17:01:58.766Z",
+        "updated_at": "2023-08-24T14:49:24.701Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "3583b9a6-de5e-4eb4-892c-ab927c448942"
+      }
+    ],
+    "order": [
+      {
+        "id": "63df118f-5464-4f98-9a89-603844787a04",
+        "status": "Pending",
+        "created_at": "2023-08-25T05:42:56.116Z",
+        "updated_at": "2023-08-24T16:59:37.955Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "25759587-35f5-49b4-9263-0bab2b1d4092"
+      },
+      {
+        "id": "e8377fba-c366-472d-96c4-ad9fba26dcf8",
+        "status": "Processing",
+        "created_at": "2023-08-25T00:30:12.137Z",
+        "updated_at": "2023-08-25T02:04:05.120Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "25759587-35f5-49b4-9263-0bab2b1d4092"
+      },
+      {
+        "id": "3cb58aeb-9b6d-47d3-be82-c92aab1e36ab",
+        "status": "Shipped",
+        "created_at": "2023-08-24T14:02:54.451Z",
+        "updated_at": "2023-08-24T18:50:21.648Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "3e462191-efab-47fb-93d6-0037e612179c"
+      },
+      {
+        "id": "94db89bf-b6f0-4896-8b89-b16a84617e9c",
+        "status": "Delivered",
+        "created_at": "2023-08-24T19:25:19.767Z",
+        "updated_at": "2023-08-24T13:27:34.747Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "7ab4411e-0121-4c0c-82f9-57dd98cdb669"
+      },
+      {
+        "id": "124fcc52-6f4b-4d6a-a6ab-380480fa97e5",
+        "status": "Cancelled",
+        "created_at": "2023-08-25T01:30:47.408Z",
+        "updated_at": "2023-08-24T21:46:45.699Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "25759587-35f5-49b4-9263-0bab2b1d4092"
+      }
+    ],
+    "discount": [
+      {
+        "id": "f88ebdfa-f96f-43a3-ba9d-168d8e1a785a",
+        "code": "SAVE10",
+        "description": "Get 10% off on your next purchase",
+        "created_at": "2023-08-25T01:37:16.674Z",
+        "updated_at": "2023-08-25T05:13:08.454Z",
+        "restaurant_id": "3e462191-efab-47fb-93d6-0037e612179c"
+      },
+      {
+        "id": "3b49da83-d267-444f-9e04-ac5e3a29311a",
+        "code": "DISCOUNT20",
+        "description": "Save 20% on selected items",
+        "created_at": "2023-08-24T20:45:40.424Z",
+        "updated_at": "2023-08-24T18:27:11.555Z",
+        "restaurant_id": "3583b9a6-de5e-4eb4-892c-ab927c448942"
+      },
+      {
+        "id": "04b99b9a-4f1b-45e8-a40d-9415fdf0be8d",
+        "code": "DEAL30",
+        "description": "Grab a 30% discount on all products",
+        "created_at": "2023-08-24T16:43:32.168Z",
+        "updated_at": "2023-08-25T01:41:18.208Z",
+        "restaurant_id": "3e462191-efab-47fb-93d6-0037e612179c"
+      },
+      {
+        "id": "09c0e615-a4c9-4ff7-8618-12c9425c2648",
+        "code": "OFFER40",
+        "description": "Enjoy 40% off on your order",
+        "created_at": "2023-08-25T11:51:10.098Z",
+        "updated_at": "2023-08-24T23:41:45.920Z",
+        "restaurant_id": "25759587-35f5-49b4-9263-0bab2b1d4092"
+      },
+      {
+        "id": "78d98452-15df-4328-87f6-a7f05084c6de",
+        "code": "SALE50",
+        "description": "Biggest sale of the season - 50% off",
+        "created_at": "2023-08-24T23:56:12.346Z",
+        "updated_at": "2023-08-25T05:37:18.138Z",
+        "restaurant_id": "60899fd9-ee27-4914-af75-8d500ef50962"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "6e0bf2fc-5099-4f1a-9d90-4f5a407d3f58",
+        "email": "Elsa63@yahoo.com",
+        "firstName": "Kameron",
+        "lastName": "Anderson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/89829504",
+        "tenantId": null
+      },
+      {
+        "reference": "7b1eebc8-c893-4cd6-a4f1-f09173869550",
+        "email": "Kaylin81@yahoo.com",
+        "firstName": "Candida",
+        "lastName": "Kling",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/15.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "400cf5de-1402-48f0-ad0d-b74a172115b6",
+        "email": "Ericka_Stroman42@hotmail.com",
+        "firstName": "Gerhard",
+        "lastName": "Koss-Prohaska",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1244.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "82d1eedd-2297-4c36-b283-1b7d0e2f2334",
+        "email": "Kaya37@yahoo.com",
+        "firstName": "Easton",
+        "lastName": "Cole",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/109.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e9711a41-119f-44e4-909d-37bca40a1436",
+        "email": "Domenick_Weissnat92@gmail.com",
+        "firstName": "Alejandrin",
+        "lastName": "Gleason",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/753.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "c7b40821-bfad-4683-ad9b-7858cc090064",
+        "name": "Foodie's Delight",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-24T13:59:57.495Z",
+        "updated_at": "2023-08-25T09:54:58.916Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "bcb8cf06-5a18-4efc-9cb4-43bafa7d06b6",
+        "name": "Taste of Italy",
+        "location": "Los Angeles",
+        "menu": "Pasta",
+        "created_at": "2023-08-25T06:36:18.407Z",
+        "updated_at": "2023-08-24T22:24:09.290Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "c14a97a1-dba8-4b22-b9b1-6d311235d060",
+        "name": "Asian Fusion",
+        "location": "London",
+        "menu": "Sushi",
+        "created_at": "2023-08-25T11:55:19.307Z",
+        "updated_at": "2023-08-24T20:58:24.999Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "8b665c84-55b8-4f80-80f5-2203858172ca",
+        "name": "Mediterranean Flavors",
+        "location": "Paris",
+        "menu": "Tapas",
+        "created_at": "2023-08-25T07:52:12.838Z",
+        "updated_at": "2023-08-24T21:49:19.901Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "c45733cf-4b40-4f29-bba0-1113ac39929c",
+        "name": "Gourmet Grill",
+        "location": "Tokyo",
+        "menu": "Burger",
+        "created_at": "2023-08-25T09:21:46.375Z",
+        "updated_at": "2023-08-24T13:50:26.761Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "83be95c5-5671-40b8-ad03-27a203bf083a",
+        "time": "2023-08-24T15:57:26.085Z",
+        "created_at": "2023-08-24T20:10:58.567Z",
+        "updated_at": "2023-08-24T16:31:34.445Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "bcb8cf06-5a18-4efc-9cb4-43bafa7d06b6"
+      },
+      {
+        "id": "bcafa1ea-6742-4ea3-8d3d-6430a184c86d",
+        "time": "2023-08-25T03:01:20.887Z",
+        "created_at": "2023-08-24T15:30:49.408Z",
+        "updated_at": "2023-08-25T06:48:58.116Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "c14a97a1-dba8-4b22-b9b1-6d311235d060"
+      },
+      {
+        "id": "8296da66-d4d6-4874-a467-de18eddbb24d",
+        "time": "2023-08-25T00:06:12.214Z",
+        "created_at": "2023-08-25T10:22:48.531Z",
+        "updated_at": "2023-08-24T18:09:19.510Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "c45733cf-4b40-4f29-bba0-1113ac39929c"
+      },
+      {
+        "id": "0f936cbc-d3d4-44ee-8bd2-f0401c592a1a",
+        "time": "2023-08-24T21:49:51.655Z",
+        "created_at": "2023-08-25T10:16:11.166Z",
+        "updated_at": "2023-08-24T13:26:21.198Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "c14a97a1-dba8-4b22-b9b1-6d311235d060"
+      },
+      {
+        "id": "4dddbb13-1684-4b59-93a2-05b97d4314fe",
+        "time": "2023-08-24T15:00:11.025Z",
+        "created_at": "2023-08-24T18:04:11.308Z",
+        "updated_at": "2023-08-24T14:11:50.907Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "bcb8cf06-5a18-4efc-9cb4-43bafa7d06b6"
+      }
+    ],
+    "order": [
+      {
+        "id": "e429c071-80d5-4f94-bebe-a15bd5d09af7",
+        "status": "Pending",
+        "created_at": "2023-08-25T08:31:36.509Z",
+        "updated_at": "2023-08-25T05:36:46.519Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "bcb8cf06-5a18-4efc-9cb4-43bafa7d06b6"
+      },
+      {
+        "id": "74e9708d-8f39-4c32-9716-7ed1ea9267aa",
+        "status": "Processing",
+        "created_at": "2023-08-24T19:38:14.497Z",
+        "updated_at": "2023-08-25T03:52:15.400Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "c7b40821-bfad-4683-ad9b-7858cc090064"
+      },
+      {
+        "id": "50bfc64d-0210-44ac-b3a6-beea6f84d4f4",
+        "status": "Shipped",
+        "created_at": "2023-08-24T22:12:06.293Z",
+        "updated_at": "2023-08-24T15:01:59.625Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "bcb8cf06-5a18-4efc-9cb4-43bafa7d06b6"
+      },
+      {
+        "id": "0cd57131-8a97-4cbe-946a-eabd726b7117",
+        "status": "Delivered",
+        "created_at": "2023-08-25T00:36:26.114Z",
+        "updated_at": "2023-08-25T11:12:40.267Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "c14a97a1-dba8-4b22-b9b1-6d311235d060"
+      },
+      {
+        "id": "05c64dfb-caa3-4b8d-9afb-8369c84045fd",
+        "status": "Cancelled",
+        "created_at": "2023-08-25T10:28:46.390Z",
+        "updated_at": "2023-08-24T20:49:07.503Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "c45733cf-4b40-4f29-bba0-1113ac39929c"
+      }
+    ],
+    "discount": [
+      {
+        "id": "3e9205c4-936f-4a58-8215-5b30ebbceae8",
+        "code": "SAVE10",
+        "description": "Get 10% off your purchase",
+        "created_at": "2023-08-24T18:38:25.122Z",
+        "updated_at": "2023-08-25T07:10:14.262Z",
+        "restaurant_id": "c14a97a1-dba8-4b22-b9b1-6d311235d060"
+      },
+      {
+        "id": "c0a3d46a-48c7-4a48-9151-582dd60d277d",
+        "code": "DISCOUNT20",
+        "description": "Enjoy 20% discount on selected items",
+        "created_at": "2023-08-25T05:06:50.144Z",
+        "updated_at": "2023-08-24T13:52:05.491Z",
+        "restaurant_id": "bcb8cf06-5a18-4efc-9cb4-43bafa7d06b6"
+      },
+      {
+        "id": "6a92c107-f02c-4bfe-9570-8b5e89c2f7dc",
+        "code": "SPECIAL25",
+        "description": "Save 25% on your order",
+        "created_at": "2023-08-24T15:32:30.781Z",
+        "updated_at": "2023-08-25T12:06:36.959Z",
+        "restaurant_id": "c14a97a1-dba8-4b22-b9b1-6d311235d060"
+      },
+      {
+        "id": "9e23805a-63f7-468d-95bd-edb5a9f8d6af",
+        "code": "OFFER30",
+        "description": "Special offer: 30% off for a limited time",
+        "created_at": "2023-08-24T16:47:35.376Z",
+        "updated_at": "2023-08-25T03:07:41.682Z",
+        "restaurant_id": "c14a97a1-dba8-4b22-b9b1-6d311235d060"
+      },
+      {
+        "id": "5102dde3-070b-429f-920c-38d32989d8fb",
+        "code": "SALE50",
+        "description": "Big sale! 50% off everything",
+        "created_at": "2023-08-25T09:25:50.731Z",
+        "updated_at": "2023-08-25T02:35:03.902Z",
+        "restaurant_id": "bcb8cf06-5a18-4efc-9cb4-43bafa7d06b6"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "26a3899a-ab38-4174-9d97-70011cb0ba8c",
+        "email": "Stacey76@yahoo.com",
+        "firstName": "Roxanne",
+        "lastName": "Simonis",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/98220765",
+        "tenantId": null
+      },
+      {
+        "reference": "2fa54153-6125-41d4-a6c9-aa7d777e8a52",
+        "email": "Christophe99@hotmail.com",
+        "firstName": "Lilyan",
+        "lastName": "Hane",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1149.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "92b1e932-ce65-4c88-b90b-38ee9751e7da",
+        "email": "Katelyn.Feil62@gmail.com",
+        "firstName": "Catherine",
+        "lastName": "Sipes",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/2440235",
+        "tenantId": null
+      },
+      {
+        "reference": "8bbff865-4f0c-4e04-9091-9d72b2a9beb5",
+        "email": "Damon63@gmail.com",
+        "firstName": "Andre",
+        "lastName": "Batz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/19653935",
+        "tenantId": null
+      },
+      {
+        "reference": "775faec2-6079-4dda-bcca-e5c3e40d0869",
+        "email": "Garth.Terry35@hotmail.com",
+        "firstName": "Tyrese",
+        "lastName": "Schmitt",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/27587034",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "96fe0109-9d1a-4bf0-979c-504b2b08813c",
+        "name": "The Corner Bistro",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-25T09:01:39.948Z",
+        "updated_at": "2023-08-24T13:28:32.679Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "2488885e-1ab2-4d34-a45b-d2a5ffcae5dd",
+        "name": "Gourmet Delights",
+        "location": "San Francisco",
+        "menu": "Sushi",
+        "created_at": "2023-08-24T14:05:59.996Z",
+        "updated_at": "2023-08-25T06:24:56.522Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "e1334437-3f1d-46c4-8820-b8c9c58e3122",
+        "name": "Taste of Italy",
+        "location": "London",
+        "menu": "Pasta",
+        "created_at": "2023-08-24T21:41:32.312Z",
+        "updated_at": "2023-08-24T16:40:19.086Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "086fe377-9a38-4d87-b025-478b9c2e620c",
+        "name": "Spice Fusion",
+        "location": "Tokyo",
+        "menu": "Burger",
+        "created_at": "2023-08-25T08:47:18.142Z",
+        "updated_at": "2023-08-24T15:31:56.357Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "f43e9cd8-6a98-4cef-9254-22ea416dd794",
+        "name": "Seafood Sensations",
+        "location": "Sydney",
+        "menu": "Seafood",
+        "created_at": "2023-08-24T22:50:57.755Z",
+        "updated_at": "2023-08-24T18:05:18.595Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "e45d0eab-79d4-430a-a2d4-41b62694c815",
+        "time": "2023-08-25T07:48:21.728Z",
+        "created_at": "2023-08-24T22:03:28.851Z",
+        "updated_at": "2023-08-24T13:41:18.544Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "2488885e-1ab2-4d34-a45b-d2a5ffcae5dd"
+      },
+      {
+        "id": "78b222b4-a181-4709-8513-948e34bab02c",
+        "time": "2023-08-25T09:51:53.442Z",
+        "created_at": "2023-08-25T04:17:10.640Z",
+        "updated_at": "2023-08-25T03:05:45.955Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "2488885e-1ab2-4d34-a45b-d2a5ffcae5dd"
+      },
+      {
+        "id": "0a783ffb-5f4a-4117-8f6a-f1a4308d5487",
+        "time": "2023-08-24T14:51:44.990Z",
+        "created_at": "2023-08-25T01:15:51.438Z",
+        "updated_at": "2023-08-24T13:18:51.909Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "e1334437-3f1d-46c4-8820-b8c9c58e3122"
+      },
+      {
+        "id": "d03cc412-3177-452a-a8f0-c7c27e9cfa59",
+        "time": "2023-08-25T01:49:59.795Z",
+        "created_at": "2023-08-25T01:12:25.009Z",
+        "updated_at": "2023-08-25T08:08:07.715Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "086fe377-9a38-4d87-b025-478b9c2e620c"
+      },
+      {
+        "id": "6ea90e61-fb2b-422f-8dec-f2d15d6c2a22",
+        "time": "2023-08-24T16:42:21.036Z",
+        "created_at": "2023-08-25T00:52:50.389Z",
+        "updated_at": "2023-08-25T01:12:06.314Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "96fe0109-9d1a-4bf0-979c-504b2b08813c"
+      }
+    ],
+    "order": [
+      {
+        "id": "b877513b-5e08-4360-8c87-9aa19c279171",
+        "status": "Pending",
+        "created_at": "2023-08-25T06:28:20.464Z",
+        "updated_at": "2023-08-24T19:11:08.736Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "e1334437-3f1d-46c4-8820-b8c9c58e3122"
+      },
+      {
+        "id": "4d3150a2-2951-42df-8995-9570d4a2d6e8",
+        "status": "Processing",
+        "created_at": "2023-08-25T10:03:22.714Z",
+        "updated_at": "2023-08-25T07:26:48.509Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "96fe0109-9d1a-4bf0-979c-504b2b08813c"
+      },
+      {
+        "id": "93a80666-5c48-4168-abeb-ef1b213028b5",
+        "status": "Shipped",
+        "created_at": "2023-08-25T08:49:28.939Z",
+        "updated_at": "2023-08-25T02:10:27.226Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "086fe377-9a38-4d87-b025-478b9c2e620c"
+      },
+      {
+        "id": "8443ec05-ed2e-4e22-8e67-521ea6b00f5c",
+        "status": "Delivered",
+        "created_at": "2023-08-25T10:07:45.283Z",
+        "updated_at": "2023-08-25T08:28:07.166Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "2488885e-1ab2-4d34-a45b-d2a5ffcae5dd"
+      },
+      {
+        "id": "2dd8cf60-4d08-4b89-90d7-3c407d1eadae",
+        "status": "Cancelled",
+        "created_at": "2023-08-24T14:14:09.054Z",
+        "updated_at": "2023-08-25T05:16:23.612Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "96fe0109-9d1a-4bf0-979c-504b2b08813c"
+      }
+    ],
+    "discount": [
+      {
+        "id": "7facaedc-5d15-417a-a526-bd8b0ed864e6",
+        "code": "SAVE10",
+        "description": "10% off on all orders",
+        "created_at": "2023-08-24T19:57:15.007Z",
+        "updated_at": "2023-08-24T20:09:57.803Z",
+        "restaurant_id": "e1334437-3f1d-46c4-8820-b8c9c58e3122"
+      },
+      {
+        "id": "d698cda4-8345-421b-92b1-7f781fc42599",
+        "code": "DISCOUNT20",
+        "description": "Get 20% discount on selected items",
+        "created_at": "2023-08-24T18:45:27.519Z",
+        "updated_at": "2023-08-25T00:09:32.443Z",
+        "restaurant_id": "f43e9cd8-6a98-4cef-9254-22ea416dd794"
+      },
+      {
+        "id": "afb110ea-5c28-460a-b3be-518db2dd2fe7",
+        "code": "SPECIAL30",
+        "description": "Exclusive 30% off for first-time customers",
+        "created_at": "2023-08-25T00:54:37.731Z",
+        "updated_at": "2023-08-25T10:28:33.673Z",
+        "restaurant_id": "086fe377-9a38-4d87-b025-478b9c2e620c"
+      },
+      {
+        "id": "9eb61a00-9c7a-42a7-8af1-155e95ee16d4",
+        "code": "SALE40",
+        "description": "40% off on clearance items",
+        "created_at": "2023-08-24T13:56:07.332Z",
+        "updated_at": "2023-08-24T17:57:51.922Z",
+        "restaurant_id": "96fe0109-9d1a-4bf0-979c-504b2b08813c"
+      },
+      {
+        "id": "e4c01d9c-8e01-4289-a19e-e56a33770cd5",
+        "code": "OFF50",
+        "description": "50% discount on your entire purchase",
+        "created_at": "2023-08-25T03:59:10.283Z",
+        "updated_at": "2023-08-24T18:53:00.527Z",
+        "restaurant_id": "f43e9cd8-6a98-4cef-9254-22ea416dd794"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "99694e23-fe42-49aa-ab39-e46177b5bc35",
+        "email": "Eliane_Hane@hotmail.com",
+        "firstName": "Myrtle",
+        "lastName": "Batz",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/107.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "746296f6-1193-4368-8716-a3ad67bb5dcb",
+        "email": "Pansy_Grant43@gmail.com",
+        "firstName": "Trisha",
+        "lastName": "Haag",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/554.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "829e273e-95c1-414f-af73-0ecdf82705c1",
+        "email": "Tatyana_Rice@hotmail.com",
+        "firstName": "Uriah",
+        "lastName": "Kerluke",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1932423",
+        "tenantId": null
+      },
+      {
+        "reference": "e500cc77-7d68-462a-a9a1-d6eff762559b",
+        "email": "Ernestina28@hotmail.com",
+        "firstName": "Kylie",
+        "lastName": "Dibbert",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1045.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "55f75650-073d-46eb-b32a-b52c8fc9fd9d",
+        "email": "Buck.Daugherty@hotmail.com",
+        "firstName": "Angelica",
+        "lastName": "Hartmann",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/59158506",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "dbe117d0-34d5-459f-b0a6-aef8e8b9e23a",
+        "name": "The Tasty Bite",
+        "location": "New York City",
+        "menu": "Appetizers",
+        "created_at": "2023-08-24T22:29:37.696Z",
+        "updated_at": "2023-08-25T00:06:10.994Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "1277a079-5367-441e-9736-801ad6856fb6",
+        "name": "Foodie's Delight",
+        "location": "Los Angeles",
+        "menu": "Main Courses",
+        "created_at": "2023-08-24T20:53:53.761Z",
+        "updated_at": "2023-08-25T11:16:31.005Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "c7e16da5-459f-465c-8130-d7cf5dd0389b",
+        "name": "Gourmet Kitchen",
+        "location": "London",
+        "menu": "Desserts",
+        "created_at": "2023-08-25T06:01:01.926Z",
+        "updated_at": "2023-08-24T19:39:09.409Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "8dbb0444-5f13-4dfb-9960-a32cf969f81d",
+        "name": "Flavors of the World",
+        "location": "Paris",
+        "menu": "Beverages",
+        "created_at": "2023-08-25T00:58:07.665Z",
+        "updated_at": "2023-08-24T18:17:23.686Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "f17eec2d-5065-4854-9a3a-7447735c0bf8",
+        "name": "Culinary Experience",
+        "location": "Tokyo",
+        "menu": "Specialty Dishes",
+        "created_at": "2023-08-24T20:13:29.327Z",
+        "updated_at": "2023-08-24T14:15:44.242Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "cb3d0f8f-d7ba-41c7-9a2c-ebcd49e1269b",
+        "time": "2023-08-25T07:54:14.610Z",
+        "created_at": "2023-08-24T20:05:40.432Z",
+        "updated_at": "2023-08-24T16:41:24.339Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "1277a079-5367-441e-9736-801ad6856fb6"
+      },
+      {
+        "id": "32dedca5-11c6-40f8-b250-4adddb5f97b7",
+        "time": "2023-08-24T15:03:48.261Z",
+        "created_at": "2023-08-25T08:05:48.254Z",
+        "updated_at": "2023-08-24T20:31:07.040Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "8dbb0444-5f13-4dfb-9960-a32cf969f81d"
+      },
+      {
+        "id": "45c4678e-a496-4e62-8246-b94287027af2",
+        "time": "2023-08-24T13:25:42.303Z",
+        "created_at": "2023-08-24T20:00:12.356Z",
+        "updated_at": "2023-08-25T04:31:20.886Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "c7e16da5-459f-465c-8130-d7cf5dd0389b"
+      },
+      {
+        "id": "2de9136a-8ef9-4f12-8211-0beb313465fd",
+        "time": "2023-08-25T05:54:10.886Z",
+        "created_at": "2023-08-24T19:07:59.172Z",
+        "updated_at": "2023-08-25T12:49:55.045Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "dbe117d0-34d5-459f-b0a6-aef8e8b9e23a"
+      },
+      {
+        "id": "9a6dc779-1ffa-4496-9cd3-5d4289d40b40",
+        "time": "2023-08-24T19:00:34.306Z",
+        "created_at": "2023-08-24T14:48:52.129Z",
+        "updated_at": "2023-08-25T05:42:32.562Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "f17eec2d-5065-4854-9a3a-7447735c0bf8"
+      }
+    ],
+    "order": [
+      {
+        "id": "382dcf56-4a9b-4f10-b75b-3a879735621d",
+        "status": "Pending",
+        "created_at": "2023-08-24T23:41:29.044Z",
+        "updated_at": "2023-08-25T09:36:49.654Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "8dbb0444-5f13-4dfb-9960-a32cf969f81d"
+      },
+      {
+        "id": "33d51557-299d-4c73-b805-e58b2d0d20e3",
+        "status": "Processing",
+        "created_at": "2023-08-24T19:07:14.100Z",
+        "updated_at": "2023-08-24T17:23:11.770Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "8dbb0444-5f13-4dfb-9960-a32cf969f81d"
+      },
+      {
+        "id": "ef5cf067-6353-4c52-9079-ee91446d58f7",
+        "status": "Shipped",
+        "created_at": "2023-08-24T22:39:51.834Z",
+        "updated_at": "2023-08-25T08:08:32.139Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "c7e16da5-459f-465c-8130-d7cf5dd0389b"
+      },
+      {
+        "id": "79a6561e-f574-4c24-a8a6-368a12b66b17",
+        "status": "Delivered",
+        "created_at": "2023-08-25T08:11:31.650Z",
+        "updated_at": "2023-08-25T04:53:29.386Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "8dbb0444-5f13-4dfb-9960-a32cf969f81d"
+      },
+      {
+        "id": "aa07e25d-a48e-45c2-a989-053ec7382e15",
+        "status": "Cancelled",
+        "created_at": "2023-08-24T16:15:15.311Z",
+        "updated_at": "2023-08-25T02:00:27.436Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "f17eec2d-5065-4854-9a3a-7447735c0bf8"
+      }
+    ],
+    "discount": [
+      {
+        "id": "9b3d0645-3f43-4f17-9ec7-dfe2c311be8f",
+        "code": "SAVE10",
+        "description": "Get 10% off on your purchase",
+        "created_at": "2023-08-25T00:16:58.002Z",
+        "updated_at": "2023-08-25T02:29:12.100Z",
+        "restaurant_id": "1277a079-5367-441e-9736-801ad6856fb6"
+      },
+      {
+        "id": "625720bb-b78a-46ec-bfb9-99d79dfe447f",
+        "code": "DISCOUNT20",
+        "description": "Enjoy a 20% discount on selected items",
+        "created_at": "2023-08-25T01:09:31.573Z",
+        "updated_at": "2023-08-24T19:01:04.383Z",
+        "restaurant_id": "1277a079-5367-441e-9736-801ad6856fb6"
+      },
+      {
+        "id": "585c4073-e986-4e5d-abde-2bd37ec7cc72",
+        "code": "SPECIAL30",
+        "description": "Save 30% on your next order",
+        "created_at": "2023-08-25T06:12:39.370Z",
+        "updated_at": "2023-08-25T07:29:49.726Z",
+        "restaurant_id": "1277a079-5367-441e-9736-801ad6856fb6"
+      },
+      {
+        "id": "35b9ddbb-a49d-452b-8fc4-270e76029e63",
+        "code": "SALE40",
+        "description": "Huge sale with 40% off on all products",
+        "created_at": "2023-08-25T05:20:53.862Z",
+        "updated_at": "2023-08-24T18:30:45.479Z",
+        "restaurant_id": "c7e16da5-459f-465c-8130-d7cf5dd0389b"
+      },
+      {
+        "id": "199a96fe-0bf0-40fe-93df-8255bb11c1b8",
+        "code": "OFF50",
+        "description": "Get 50% off on your first purchase",
+        "created_at": "2023-08-25T06:29:20.039Z",
+        "updated_at": "2023-08-24T17:42:55.471Z",
+        "restaurant_id": "c7e16da5-459f-465c-8130-d7cf5dd0389b"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "fa89aadf-2e35-40d6-b31d-3c7cf15ee23b",
+        "email": "Joshua_Feil@yahoo.com",
+        "firstName": "Floy",
+        "lastName": "DuBuque",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/157.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "3980cefd-0883-4fb8-afaa-60968ddd985d",
+        "email": "Rodrick82@gmail.com",
+        "firstName": "Russ",
+        "lastName": "Sanford-Legros",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/76391605",
+        "tenantId": null
+      },
+      {
+        "reference": "809567fb-b0da-41b9-8aa7-bd85fb753976",
+        "email": "Lee76@hotmail.com",
+        "firstName": "Quinten",
+        "lastName": "Schneider",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/60162689",
+        "tenantId": null
+      },
+      {
+        "reference": "c0e7d450-8faf-4be7-a43d-67a0414e8f37",
+        "email": "Damian_Kulas82@hotmail.com",
+        "firstName": "Karl",
+        "lastName": "Steuber",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/38087807",
+        "tenantId": null
+      },
+      {
+        "reference": "70ad430e-df40-48be-93cd-8f9a378f8c1d",
+        "email": "Madeline25@gmail.com",
+        "firstName": "Kole",
+        "lastName": "Konopelski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1213.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "restaurant": [
+      {
+        "id": "d1f14e9c-ad49-41cb-85d3-5d51dcb977c3",
+        "name": "The Hungry Chef",
+        "location": "New York City",
+        "menu": "Steak",
+        "created_at": "2023-08-25T00:25:23.816Z",
+        "updated_at": "2023-08-24T15:17:23.007Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "b7b94aa0-0d2b-4a14-ad63-8bd231c66514",
+        "name": "Taste of Italy",
+        "location": "Los Angeles",
+        "menu": "Pasta",
+        "created_at": "2023-08-24T16:50:24.934Z",
+        "updated_at": "2023-08-24T17:16:21.926Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "9d8c5171-1a0f-4acd-89c4-d7958c618ad3",
+        "name": "Asian Fusion",
+        "location": "London",
+        "menu": "Sushi",
+        "created_at": "2023-08-25T03:20:49.654Z",
+        "updated_at": "2023-08-24T16:21:58.619Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "2ba5bdcd-089d-4609-b7fb-cff43b93c9c5",
+        "name": "Mediterranean Delight",
+        "location": "Tokyo",
+        "menu": "Burger",
+        "created_at": "2023-08-24T16:08:43.343Z",
+        "updated_at": "2023-08-24T22:19:22.464Z",
+        "startup_id": "main_entity_pk"
+      },
+      {
+        "id": "5fd7bc6a-e95c-494e-82c6-9c2daa1fd068",
+        "name": "Sushi Paradise",
+        "location": "Paris",
+        "menu": "Pizza",
+        "created_at": "2023-08-24T19:35:20.487Z",
+        "updated_at": "2023-08-25T09:59:53.676Z",
+        "startup_id": "main_entity_pk"
+      }
+    ],
+    "reservation": [
+      {
+        "id": "c918c930-36b1-44bd-8a60-6eaa8fcd80f1",
+        "time": "2023-08-24T14:42:03.175Z",
+        "created_at": "2023-08-24T21:31:05.880Z",
+        "updated_at": "2023-08-24T17:04:31.393Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "5fd7bc6a-e95c-494e-82c6-9c2daa1fd068"
+      },
+      {
+        "id": "29d4ee93-3c6f-4dc7-b98d-f98afe09f134",
+        "time": "2023-08-25T06:45:18.612Z",
+        "created_at": "2023-08-24T13:58:13.261Z",
+        "updated_at": "2023-08-24T20:14:12.701Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "9d8c5171-1a0f-4acd-89c4-d7958c618ad3"
+      },
+      {
+        "id": "74269fb3-35d4-420b-ac10-d39832c7de2c",
+        "time": "2023-08-25T06:08:51.922Z",
+        "created_at": "2023-08-25T11:16:25.971Z",
+        "updated_at": "2023-08-24T19:05:35.776Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "5fd7bc6a-e95c-494e-82c6-9c2daa1fd068"
+      },
+      {
+        "id": "39c7faa8-e18a-4224-93a8-fe927e8f3937",
+        "time": "2023-08-24T16:56:57.815Z",
+        "created_at": "2023-08-25T07:52:10.881Z",
+        "updated_at": "2023-08-24T14:31:12.680Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "d1f14e9c-ad49-41cb-85d3-5d51dcb977c3"
+      },
+      {
+        "id": "5103e11c-c549-4f95-ba85-386265dbd441",
+        "time": "2023-08-24T14:43:02.499Z",
+        "created_at": "2023-08-25T04:36:13.063Z",
+        "updated_at": "2023-08-24T15:45:37.908Z",
+        "customer_id": "user_entity_pk",
+        "restaurant_id": "b7b94aa0-0d2b-4a14-ad63-8bd231c66514"
+      }
+    ],
+    "order": [
+      {
+        "id": "52063282-4e22-4a58-9037-e1240057b48a",
+        "status": "Pending",
+        "created_at": "2023-08-24T17:09:29.002Z",
+        "updated_at": "2023-08-25T09:14:58.828Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "5fd7bc6a-e95c-494e-82c6-9c2daa1fd068"
+      },
+      {
+        "id": "515685c8-b9d1-4e77-a3d0-2bcb6bfafd5c",
+        "status": "Processing",
+        "created_at": "2023-08-25T07:42:58.560Z",
+        "updated_at": "2023-08-25T11:03:20.533Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "2ba5bdcd-089d-4609-b7fb-cff43b93c9c5"
+      },
+      {
+        "id": "7fd3bed9-8c12-4550-b2e1-a1a16ecc3907",
+        "status": "Shipped",
+        "created_at": "2023-08-24T17:25:03.476Z",
+        "updated_at": "2023-08-25T11:11:34.215Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "2ba5bdcd-089d-4609-b7fb-cff43b93c9c5"
+      },
+      {
+        "id": "5a767b5b-b615-458a-8467-31f678087505",
+        "status": "Delivered",
+        "created_at": "2023-08-24T20:22:53.711Z",
+        "updated_at": "2023-08-24T20:17:11.591Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "5fd7bc6a-e95c-494e-82c6-9c2daa1fd068"
+      },
+      {
+        "id": "3d7153e1-f098-4f52-8bcf-5803a345394d",
+        "status": "Cancelled",
+        "created_at": "2023-08-25T10:25:20.600Z",
+        "updated_at": "2023-08-25T01:08:43.917Z",
+        "customer_id": "user_entity_pk",
+        "delivery_driver_id": "user_entity_pk",
+        "restaurant_id": "b7b94aa0-0d2b-4a14-ad63-8bd231c66514"
+      }
+    ],
+    "discount": [
+      {
+        "id": "8e362a6e-80c5-4e91-bc7e-9b7848866a8f",
+        "code": "SAVE10",
+        "description": "Get 10% off your next purchase",
+        "created_at": "2023-08-24T13:12:16.585Z",
+        "updated_at": "2023-08-24T13:42:55.735Z",
+        "restaurant_id": "5fd7bc6a-e95c-494e-82c6-9c2daa1fd068"
+      },
+      {
+        "id": "119a9ced-1f59-4008-97ee-a0ab7a056bc5",
+        "code": "DISCOUNT20",
+        "description": "Enjoy a 20% discount on selected items",
+        "created_at": "2023-08-25T11:39:17.680Z",
+        "updated_at": "2023-08-25T01:38:17.172Z",
+        "restaurant_id": "9d8c5171-1a0f-4acd-89c4-d7958c618ad3"
+      },
+      {
+        "id": "8a67c73f-c216-439a-908c-3d6555be666d",
+        "code": "SPECIAL30",
+        "description": "Save 30% on all orders",
+        "created_at": "2023-08-24T15:04:15.673Z",
+        "updated_at": "2023-08-25T11:02:47.332Z",
+        "restaurant_id": "2ba5bdcd-089d-4609-b7fb-cff43b93c9c5"
+      },
+      {
+        "id": "eae01fc6-1bb2-4ce3-ae14-b88c83426b7d",
+        "code": "SALE50",
+        "description": "Biggest sale of the year - 50% off everything",
+        "created_at": "2023-08-25T05:39:39.794Z",
+        "updated_at": "2023-08-24T16:02:43.483Z",
+        "restaurant_id": "b7b94aa0-0d2b-4a14-ad63-8bd231c66514"
+      },
+      {
+        "id": "6162ae14-e307-424f-95f2-589ee8662775",
+        "code": "OFFER60",
+        "description": "Limited time offer: 60% off all products",
+        "created_at": "2023-08-24T18:35:54.224Z",
+        "updated_at": "2023-08-24T18:59:09.529Z",
+        "restaurant_id": "d1f14e9c-ad49-41cb-85d3-5d51dcb977c3"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ad3c2c1b-c45f-4e45-b540-f9480a118942",
+        "email": "Daphnee94@yahoo.com",
+        "firstName": "Odell",
+        "lastName": "Hyatt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/253.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1a82df8f-c4ee-49b0-a59f-caa8438eb9e0",
+        "email": "Eveline.Zboncak93@yahoo.com",
+        "firstName": "Helen",
+        "lastName": "Barrows",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/430.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "ee336db1-f459-47ff-87aa-39bb14c9e7bb",
+        "email": "Tracey41@yahoo.com",
+        "firstName": "Amy",
+        "lastName": "Keebler",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/351.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c26d954e-e79b-4ffe-a403-7fb25fc1c486",
+        "email": "Fernando.Kemmer@yahoo.com",
+        "firstName": "Wilma",
+        "lastName": "Crooks",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/995.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9207237f-37eb-48b3-95f1-943931eb3e63",
+        "email": "Dayton_Jacobs18@gmail.com",
+        "firstName": "Viviane",
+        "lastName": "Strosin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/395.jpg",
+        "tenantId": null
+      }
+    ]
+  }
+]

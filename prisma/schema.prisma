@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["clientExtensions", "postgresqlExtensions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  extensions      = [pgcrypto]
+}
+
+model discount {
+  id            String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  code          String     @db.VarChar(255)
+  description   String?    @db.VarChar(255)
+  restaurant_id String     @db.Uuid
+  created_at    DateTime   @default(now()) @db.Timestamp(6)
+  updated_at    DateTime   @default(now()) @db.Timestamp(6)
+  restaurant    restaurant @relation(fields: [restaurant_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model order {
+  id                                  String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  customer_id                         String     @db.Uuid
+  restaurant_id                       String     @db.Uuid
+  delivery_driver_id                  String     @db.Uuid
+  status                              String     @db.VarChar(255)
+  created_at                          DateTime   @default(now()) @db.Timestamp(6)
+  updated_at                          DateTime   @default(now()) @db.Timestamp(6)
+  user_order_customer_idTouser        user       @relation("order_customer_idTouser", fields: [customer_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user_order_delivery_driver_idTouser user       @relation("order_delivery_driver_idTouser", fields: [delivery_driver_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  restaurant                          restaurant @relation(fields: [restaurant_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model reservation {
+  id            String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  customer_id   String     @db.Uuid
+  restaurant_id String     @db.Uuid
+  time          DateTime   @db.Timestamp(6)
+  created_at    DateTime   @default(now()) @db.Timestamp(6)
+  updated_at    DateTime   @default(now()) @db.Timestamp(6)
+  user          user       @relation(fields: [customer_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  restaurant    restaurant @relation(fields: [restaurant_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model restaurant {
+  id          String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name        String        @db.VarChar(255)
+  location    String        @db.VarChar(255)
+  menu        String        @db.VarChar(255)
+  startup_id  String        @db.Uuid
+  created_at  DateTime      @default(now()) @db.Timestamp(6)
+  updated_at  DateTime      @default(now()) @db.Timestamp(6)
+  discount    discount[]
+  order       order[]
+  reservation reservation[]
+  startup     startup       @relation(fields: [startup_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model startup {
+  id          String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  description String?      @db.VarChar(255)
+  name        String       @db.VarChar(255)
+  created_at  DateTime     @default(now()) @db.Timestamp(6)
+  updated_at  DateTime     @default(now()) @db.Timestamp(6)
+  user_id     String       @db.Uuid
+  tenant_id   String       @db.VarChar(255)
+  restaurant  restaurant[]
+  user        user         @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model user {
+  id                                   String        @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email                                String        @unique @db.VarChar(255)
+  firstName                            String?       @db.VarChar(255)
+  lastName                             String?       @db.VarChar(255)
+  roq_user_id                          String        @db.VarChar(255)
+  tenant_id                            String        @db.VarChar(255)
+  created_at                           DateTime      @default(now()) @db.Timestamp(6)
+  updated_at                           DateTime      @default(now()) @db.Timestamp(6)
+  order_order_customer_idTouser        order[]       @relation("order_customer_idTouser")
+  order_order_delivery_driver_idTouser order[]       @relation("order_delivery_driver_idTouser")
+  reservation                          reservation[]
+  startup                              startup[]
+}
